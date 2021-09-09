@@ -1,0 +1,42 @@
+include<stdio.h>
+int main()
+{
+   
+   int marks;
+   
+
+   
+   printf("Enter marks(0-100): ");
+   scanf("%d",&marks);
+
+   
+   if(marks<0 || marks>100) {
+     printf("Invalid marks");
+     
+     return 0;
+   }
+
+   
+   if(marks>=85 && marks<=100)
+     printf("Hey Kid! Excellent you scored Grade A");
+
+   
+   else if(marks<=84 && marks>=70)
+     printf("Wow! You scored Grade B");
+   
+   else if(marks<=69 &&marks>=55)
+     printf("Nice you scored Grade c");
+
+   
+   else if(marks<=54 &&marks>=40)
+     printf("Fair you scored Grade D");
+
+   
+  
+   else
+     printf("Try better Grade F") ;
+
+   
+
+   return 0;
+}
